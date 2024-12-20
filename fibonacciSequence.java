@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 public class fibonacciSequence {
-    public static boolean fibonacciSeqMethod(int number){
+    public static boolean isFibonacciNumber(int number){
         boolean output = false;
         List<Integer> fibonacciArr = new ArrayList<Integer>();
         fibonacciArr.add(0);
@@ -21,6 +21,6 @@ public class fibonacciSequence {
         return output;
     }
     public static void main(String args[]){
-        System.out.println(fibonacciSeqMethod(5));
+        System.out.println(isFibonacciNumber(5));
     }
 }

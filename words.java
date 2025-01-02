@@ -21,6 +21,10 @@ public class words {
                    words2.add(words.get(i));
                 }
         }   */  
+        if(phrase == ""){
+            output.add("");      
+        }
+        else {
         for(int i = 0; i < words.size(); i++) {
             if(map.get(words.get(i)) == null) {
                 map.put(words.get(i), 1 );
@@ -32,6 +36,7 @@ public class words {
         for(String word : map.keySet()) {
             output.add(word + " x " + map.get(word));
         }        
+        }
         return output;
     }
     public static void main(String[] args) {

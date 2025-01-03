@@ -1,26 +1,10 @@
 import java.util.*;
 
 public class words {
-    public static class Counter {
-        public int count = 0;
-        public String name;
-        public Counter(String name) {
-            this.name = name;
-            this.count = 1;
-        }
-        public void increment() {
-            this.count++;
-        }    
-    }
     public static List<String> wordsMethod(String phrase) {
         List<String> words = Arrays.asList(phrase.split("[^a-zA-Z]+"));
         List<String> output = new ArrayList<String>();
         HashMap<String, Integer> map = new HashMap<String, Integer>();
-    /*  for(int i = 0; i < words.size(); i++) {
-               if(Collections.binarySearch(words2, words.get(i)) < 0) {
-                   words2.add(words.get(i));
-                }
-        }   */  
         if(phrase == ""){
             output.add("");      
         }
